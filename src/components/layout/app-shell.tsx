@@ -4,6 +4,7 @@ import { SidebarFallback } from "./sidebar-fallback";
 import { BottomNav } from "./bottom-nav";
 import { BottomNavFallback } from "./bottom-nav-fallback";
 import { MobileHeader } from "./mobile-header";
+import { ChatWidget } from "@/components/chatbot/chat-widget";
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   return (
@@ -18,6 +19,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       <Suspense fallback={<BottomNavFallback />}>
         <BottomNav />
       </Suspense>
+      <ChatWidget />
     </div>
   );
 }
