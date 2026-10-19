@@ -13,7 +13,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       </Suspense>
       <MobileHeader />
       <main className="md:pl-64 pb-20 md:pb-10">
-        <div className="mx-auto max-w-6xl px-4 py-5 md:px-8 md:py-8">{children}</div>
+        <div className="mx-auto max-w-[1600px] px-4 py-5 md:px-8 md:py-8 xl:px-10">{children}</div>
       </main>
       <Suspense fallback={<BottomNavFallback />}>
         <BottomNav />
